@@ -1,0 +1,34 @@
+{
+  "name": "FitMannequin",
+  "description": "Orange anatomical muscle mannequin for fitness content",
+  
+  "base_prompt": "Anatomical muscle mannequin figure, orange-amber colored skin surface with subtle muscle definition visible beneath, covered in precise 3D polygonal wireframe mesh grid lines across entire body creating geometric topology pattern, humanoid athletic male proportions, completely faceless smooth head with only two simple solid black oval eyes, no nose no mouth no ears, wearing olive army green athletic compression shorts mid-thigh length, grey athletic training sneakers with white rubber soles and white laces, figure on seamless solid flat cream beige background color hex F5E6D3, no shadows on background, no gradients, no floor line visible, clean matte solid color backdrop, professional fitness character illustration, full body shot head to toe centered in frame, clean sharp vector art style, high detail muscle anatomy reference figure, studio lighting flat even illumination",
+  
+  "negative_prompt": "realistic human skin texture, face features, nose, mouth, ears, hair, beard, eyebrows, realistic eyes, gradient background, shadow on floor, horizon line, ground plane visible, text, watermark, signature, blurry, low quality, extra limbs, missing limbs, deformed anatomy, multiple figures, busy background, environmental elements, props, gym equipment in background, reflections, dramatic lighting, harsh shadows, cropped, partial body",
+  
+  "style_keywords": [
+    "anatomical mannequin",
+    "écorché figure", 
+    "wireframe mesh topology",
+    "muscle anatomy reference",
+    "vector illustration style",
+    "solid color backdrop"
+  ],
+  
+  "fixed_elements": {
+    "body_color": "orange-amber with muscle definition",
+    "texture": "3D polygonal wireframe mesh grid lines",
+    "head": "completely smooth, faceless",
+    "eyes": "two simple solid black ovals only",
+    "shorts": "olive army green compression shorts, mid-thigh",
+    "shoes": "grey athletic sneakers, white soles, white laces",
+    "background": "solid flat cream beige #F5E6D3, no shadows, no gradient, no floor"
+  },
+
+  "generation_settings": {
+    "model": "fal-ai/flux-pro/v1.1-ultra",
+    "guidance_scale": 3.5,
+    "image_size": "square_hd",
+    "safety_tolerance": 2
+  }
+}

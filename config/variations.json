@@ -1,0 +1,207 @@
+{
+  "description": "Pose variations derived from anchor images using image-to-image",
+  "generate_count_per_variation": 5,
+  
+  "variations": [
+    {
+      "id": "pullup_top",
+      "name": "Pull-up Top Position",
+      "anchor": "hanging",
+      "edit_prompt": "pulling body upward, chin above the bar, elbows bent and pulled down, lats fully contracted and engaged",
+      "strength": 0.55,
+      "muscles_highlighted": ["lats", "biceps", "forearms"]
+    },
+    {
+      "id": "pullup_mid",
+      "name": "Pull-up Mid Position",
+      "anchor": "hanging",
+      "edit_prompt": "body halfway up, arms bent at 90 degrees, actively pulling, mid pull-up position",
+      "strength": 0.5,
+      "muscles_highlighted": ["lats", "biceps"]
+    },
+    {
+      "id": "chinup_top",
+      "name": "Chin-up Top Position",
+      "anchor": "hanging",
+      "edit_prompt": "chin-up grip with palms facing body, chin above bar, biceps fully contracted",
+      "strength": 0.55,
+      "muscles_highlighted": ["biceps", "lats"]
+    },
+    {
+      "id": "deadhang",
+      "name": "Dead Hang",
+      "anchor": "hanging",
+      "edit_prompt": "completely relaxed hang, arms fully extended, shoulders stretched, passive hang position",
+      "strength": 0.3,
+      "muscles_highlighted": ["forearms", "shoulders"]
+    },
+    {
+      "id": "barbell_row_down",
+      "name": "Barbell Row Start",
+      "anchor": "bent",
+      "edit_prompt": "gripping barbell with both hands, arms extended down, bent over position, preparing to row",
+      "strength": 0.5,
+      "muscles_highlighted": ["back", "forearms"]
+    },
+    {
+      "id": "barbell_row_up",
+      "name": "Barbell Row Top",
+      "anchor": "bent",
+      "edit_prompt": "pulling barbell to lower chest, elbows driven back, squeezing shoulder blades together",
+      "strength": 0.55,
+      "muscles_highlighted": ["lats", "rhomboids", "rear delts"]
+    },
+    {
+      "id": "dumbbell_row",
+      "name": "Single Arm Dumbbell Row",
+      "anchor": "bent",
+      "edit_prompt": "one arm rowing dumbbell up, other arm braced on bench, torso stable",
+      "strength": 0.55,
+      "muscles_highlighted": ["lats", "biceps"]
+    },
+    {
+      "id": "deadlift_start",
+      "name": "Deadlift Start Position",
+      "anchor": "bent",
+      "edit_prompt": "gripping barbell on ground, hips hinged back, knees bent, preparing to lift",
+      "strength": 0.6,
+      "muscles_highlighted": ["hamstrings", "glutes", "lower back"]
+    },
+    {
+      "id": "deadlift_top",
+      "name": "Deadlift Lockout",
+      "anchor": "front",
+      "edit_prompt": "standing tall holding barbell at thigh level, hips fully extended, chest proud",
+      "strength": 0.5,
+      "muscles_highlighted": ["glutes", "hamstrings", "traps"]
+    },
+    {
+      "id": "lat_pulldown_start",
+      "name": "Lat Pulldown Start",
+      "anchor": "seated",
+      "edit_prompt": "seated at lat pulldown machine, arms extended overhead gripping wide bar",
+      "strength": 0.55,
+      "muscles_highlighted": ["lats"]
+    },
+    {
+      "id": "lat_pulldown_end",
+      "name": "Lat Pulldown Bottom",
+      "anchor": "seated",
+      "edit_prompt": "pulling bar down to upper chest, elbows driven down, lats contracted",
+      "strength": 0.55,
+      "muscles_highlighted": ["lats", "biceps", "rear delts"]
+    },
+    {
+      "id": "cable_row_start",
+      "name": "Seated Cable Row Start",
+      "anchor": "seated",
+      "edit_prompt": "seated at cable row, arms extended forward gripping handle, back straight",
+      "strength": 0.5,
+      "muscles_highlighted": ["lats"]
+    },
+    {
+      "id": "cable_row_end",
+      "name": "Seated Cable Row Contracted",
+      "anchor": "seated",
+      "edit_prompt": "pulling cable handle to abdomen, elbows back, squeezing shoulder blades",
+      "strength": 0.55,
+      "muscles_highlighted": ["lats", "rhomboids", "biceps"]
+    },
+    {
+      "id": "shoulder_press_start",
+      "name": "Shoulder Press Start",
+      "anchor": "arms_up",
+      "edit_prompt": "holding dumbbells at shoulder level, elbows bent, preparing to press overhead",
+      "strength": 0.55,
+      "muscles_highlighted": ["shoulders"]
+    },
+    {
+      "id": "shoulder_press_top",
+      "name": "Shoulder Press Top",
+      "anchor": "arms_up",
+      "edit_prompt": "arms fully extended overhead pressing dumbbells, shoulders engaged",
+      "strength": 0.45,
+      "muscles_highlighted": ["shoulders", "triceps"]
+    },
+    {
+      "id": "bicep_curl_start",
+      "name": "Bicep Curl Start",
+      "anchor": "front",
+      "edit_prompt": "standing holding dumbbells at sides, arms extended, palms facing forward",
+      "strength": 0.45,
+      "muscles_highlighted": ["biceps"]
+    },
+    {
+      "id": "bicep_curl_top",
+      "name": "Bicep Curl Top",
+      "anchor": "front",
+      "edit_prompt": "curling dumbbells up, biceps fully contracted, elbows at sides",
+      "strength": 0.5,
+      "muscles_highlighted": ["biceps"]
+    },
+    {
+      "id": "front_double_bicep",
+      "name": "Front Double Bicep Pose",
+      "anchor": "front",
+      "edit_prompt": "classic bodybuilding front double bicep pose, arms raised and flexed, showing bicep peaks",
+      "strength": 0.55,
+      "muscles_highlighted": ["biceps", "chest", "abs"]
+    },
+    {
+      "id": "rear_lat_spread",
+      "name": "Rear Lat Spread",
+      "anchor": "back",
+      "edit_prompt": "back to camera, hands on hips, lats flared wide, classic lat spread pose",
+      "strength": 0.5,
+      "muscles_highlighted": ["lats", "lower back"]
+    },
+    {
+      "id": "rear_double_bicep",
+      "name": "Rear Double Bicep",
+      "anchor": "back",
+      "edit_prompt": "back to camera, arms raised in double bicep pose showing back definition",
+      "strength": 0.55,
+      "muscles_highlighted": ["lats", "rear delts", "biceps"]
+    },
+    {
+      "id": "squat_bottom",
+      "name": "Squat Bottom Position",
+      "anchor": "side",
+      "edit_prompt": "deep squat position, thighs below parallel, barbell on upper back, side view",
+      "strength": 0.6,
+      "muscles_highlighted": ["quads", "glutes"]
+    },
+    {
+      "id": "lunge_position",
+      "name": "Lunge Position",
+      "anchor": "quarter",
+      "edit_prompt": "forward lunge position, front knee bent 90 degrees, back knee lowered, holding dumbbells",
+      "strength": 0.6,
+      "muscles_highlighted": ["quads", "glutes", "hamstrings"]
+    },
+    {
+      "id": "plank_position",
+      "name": "Plank Hold",
+      "anchor": "side",
+      "edit_prompt": "plank position on forearms, body straight and rigid, core engaged, side view",
+      "strength": 0.65,
+      "muscles_highlighted": ["abs", "core"]
+    },
+    {
+      "id": "pushup_up",
+      "name": "Push-up Top",
+      "anchor": "side",
+      "edit_prompt": "push-up top position, arms extended, body straight, side view",
+      "strength": 0.6,
+      "muscles_highlighted": ["chest", "triceps"]
+    },
+    {
+      "id": "pushup_down",
+      "name": "Push-up Bottom",
+      "anchor": "side",
+      "edit_prompt": "push-up bottom position, chest near ground, elbows bent, body straight",
+      "strength": 0.6,
+      "muscles_highlighted": ["chest", "triceps"]
+    }
+  ]
+}

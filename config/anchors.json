@@ -1,0 +1,55 @@
+{
+  "description": "8 anchor images that define the character from all essential angles/poses",
+  "generate_count_per_anchor": 10,
+  
+  "anchors": [
+    {
+      "id": "front",
+      "name": "Front Standing",
+      "pose_prompt": "standing facing camera front view, arms relaxed at sides, feet shoulder width apart, neutral standing pose, full body shot from head to toe",
+      "use_for": ["bicep curls", "front raises", "shrugs", "front flexing"]
+    },
+    {
+      "id": "back", 
+      "name": "Back Standing",
+      "pose_prompt": "standing with back to camera rear view, arms relaxed at sides, showing full back muscles, full body shot from head to toe",
+      "use_for": ["rear lat spread", "back double bicep", "lying exercises viewed from above"]
+    },
+    {
+      "id": "side",
+      "name": "Side Profile",
+      "pose_prompt": "standing side profile view, facing left, arms at sides, showing full body silhouette, full body shot from head to toe",
+      "use_for": ["squats", "lunges side view", "tricep extensions", "side poses"]
+    },
+    {
+      "id": "quarter",
+      "name": "Three-Quarter View", 
+      "pose_prompt": "standing three-quarter angle view, body turned 45 degrees to camera, dynamic stance, full body shot from head to toe",
+      "use_for": ["lunges", "dynamic poses", "transitional movements", "cable exercises"]
+    },
+    {
+      "id": "arms_up",
+      "name": "Arms Raised",
+      "pose_prompt": "standing front view with both arms raised overhead, hands reaching up, shoulders engaged, full body shot from head to toe",
+      "use_for": ["shoulder press", "overhead extensions", "stretches", "victory poses"]
+    },
+    {
+      "id": "bent",
+      "name": "Bent Over",
+      "pose_prompt": "bent over at waist, torso parallel to ground, knees slightly bent, arms hanging down, side angle view, full body shot",
+      "use_for": ["barbell rows", "dumbbell rows", "deadlift positions", "bent over exercises"]
+    },
+    {
+      "id": "seated",
+      "name": "Seated Position",
+      "pose_prompt": "sitting on bench, upright torso, feet flat on ground, hands on thighs, front three-quarter view, full body shot",
+      "use_for": ["seated press", "lat pulldown", "cable rows", "seated curls"]
+    },
+    {
+      "id": "hanging",
+      "name": "Hanging from Bar",
+      "pose_prompt": "hanging from horizontal pull-up bar, arms fully extended overhead gripping bar, body straight, front view, full body shot",
+      "use_for": ["pull-ups", "chin-ups", "hanging leg raises", "dead hangs"]
+    }
+  ]
+}

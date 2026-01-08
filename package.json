@@ -1,0 +1,17 @@
+{
+  "name": "lora-image-generator",
+  "version": "1.0.0",
+  "description": "Generate consistent character images for LoRA training",
+  "type": "module",
+  "scripts": {
+    "phase1": "node src/phase1-anchors.js",
+    "phase2": "node src/phase2-variations.js",
+    "gallery": "node src/gallery-server.js",
+    "export": "node src/export-training.js"
+  },
+  "dependencies": {
+    "@fal-ai/serverless-client": "^0.14.3",
+    "express": "^4.18.2",
+    "open": "^10.1.0"
+  }
+}
