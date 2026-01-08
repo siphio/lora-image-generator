@@ -10,7 +10,8 @@
     "export": "node src/export-training.js"
   },
   "dependencies": {
-    "@fal-ai/serverless-client": "^0.14.3",
+    "@fal-ai/client": "^1.2.0",
+    "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "open": "^10.1.0"
   }
