@@ -5,7 +5,7 @@ node_modules/
 .env
 
 # Output images (can be large)
-output/
+# output/
 
 # OS files
 .DS_Store
