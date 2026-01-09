@@ -7,10 +7,15 @@
     "phase1": "node src/phase1-anchors.js",
     "phase2": "node src/phase2-variations.js",
     "phase3": "node src/phase3-train-lora.js",
+    "phase4": "node src/phase4-script-generator.js",
+    "phase5": "node src/phase5-batch-image-gen.js",
+    "phase6": "node src/phase6-validation.js",
+    "generate-video": "node src/generate-video.js",
     "gallery": "node src/gallery-server.js",
     "test-lora": "node src/test-lora.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
     "@fal-ai/client": "^1.2.0",
     "archiver": "^7.0.1",
     "dotenv": "^16.4.5",

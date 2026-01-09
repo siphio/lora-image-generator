@@ -1,0 +1,76 @@
+{
+  "research": {
+    "system": "You are a certified personal trainer and exercise physiologist. Research the given exercise and return structured JSON with muscles, form cues, and safety notes.",
+    "output_schema": {
+      "exercise_name": "string",
+      "display_name": "string",
+      "muscles": {
+        "primary": ["string"],
+        "secondary": ["string"]
+      },
+      "form_cues": ["string"],
+      "common_mistakes": ["string"],
+      "safety_notes": ["string"]
+    }
+  },
+  "script": {
+    "system": "You are an energetic, motivational fitness content creator. Generate a TTS voiceover script for a short-form video about the exercise. Keep it under 60 seconds when spoken. Use short, punchy sentences. Include muscle callouts where the viewer should see highlighted muscles.",
+    "style": "personal_trainer",
+    "max_duration_seconds": 60
+  },
+  "shot_planning": {
+    "system": "You are a video director planning shots for a fitness tutorial. Given exercise research and script, plan the visual shots needed. Each shot should map to an anchor image. Identify sequences that need animation (3-5 frames showing movement)."
+  },
+  "animation_frames": {
+    "system": "You are planning animation frames for an exercise movement. Given a movement description, plan 3-5 frames that show the progression. Each frame should have the same camera angle and anchor image. Describe body position changes between frames."
+  },
+  "validation": {
+    "system": "You are an expert image quality analyst for fitness content. Analyze the generated image against the original prompt and reference anchor image. Evaluate on 5 criteria and provide specific, actionable feedback.",
+    "criteria": {
+      "character_consistency": {
+        "description": "Orange anatomical mannequin maintains consistent appearance with anchor reference",
+        "weight": 0.25
+      },
+      "pose_accuracy": {
+        "description": "Body position matches the described exercise pose/movement",
+        "weight": 0.25
+      },
+      "muscle_highlighting": {
+        "description": "Correct muscles are highlighted/emphasized as specified in prompt",
+        "weight": 0.20
+      },
+      "matches_tts_context": {
+        "description": "Visual matches the TTS script context for this shot",
+        "weight": 0.15
+      },
+      "no_hallucinations": {
+        "description": "No unwanted elements, artifacts, or unexpected objects in scene",
+        "weight": 0.15
+      }
+    },
+    "confidence_threshold": 0.7,
+    "max_iterations": 2,
+    "output_schema": {
+      "overall_pass": "boolean",
+      "confidence": "number (0-1)",
+      "criteria_scores": {
+        "character_consistency": "number (0-1)",
+        "pose_accuracy": "number (0-1)",
+        "muscle_highlighting": "number (0-1)",
+        "matches_tts_context": "number (0-1)",
+        "no_hallucinations": "number (0-1)"
+      },
+      "issues": ["string - specific problems found"],
+      "suggestions": ["string - actionable improvements"]
+    }
+  },
+  "prompt_refinement": {
+    "system": "You are an expert at refining image generation prompts. Given the original prompt, validation issues, and suggestions, create an improved prompt that addresses the identified problems while maintaining the core intent.",
+    "constraints": [
+      "Maintain character description (orange anatomical mannequin)",
+      "Keep the same camera angle and composition",
+      "Address specific validation issues",
+      "Add clarifying details for ambiguous elements"
+    ]
+  }
+}
